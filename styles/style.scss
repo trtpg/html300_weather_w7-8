@@ -1,0 +1,51 @@
+@import "normalize.css";
+@import "_variables";
+
+html{box-sizing:border-box}
+body{margin:0}
+article,footer,header,main,section{display:block}
+html,body{font-size:1rem;line-height:1.2;font-family: $font;}
+.container{padding:0.01em 1rem; background-color: $white;}
+.center{text-align:center;}
+.boxShadow{box-shadow:0 4px 3px 0 rgba(0,0,0,0.2)}
+.margin{margin:$margins;}
+.background{color: $orange;background-color:$darkgrey}
+#cityName{color: $brown; font-stretch: expanded;}
+table {border-collapse: collapse; width: 100%; border-style:none;}
+th, td {text-align: left; padding: 0.7rem;}
+
+@for $i from 1 through length($colors) {
+    tr:nth-child(#{$i}) {
+        color: nth($colors, $i);
+        background-color: hsl($i * 360 / length($colors), 25%, 30%);
+    }
+    tr:nth-child(#{$i}):before {
+      content: "#{nth($icons, $i)}";
+    }
+}
+
+.form-container {
+    background-color: $formBackgroud;
+    padding: 1rem 2rem 2rem;
+    margin: $margins;
+    border: $form-border;
+}
+
+button{
+    background-color: $lightgreen;
+    color: $white;
+    padding: 0.7rem 2rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      background-color: $lightgreenHover;
+    }
+    &:active {
+      background-color: $orange;
+      transform: scale(1) rotate(-10deg);
+      border-radius: 100%;
+    }
+}

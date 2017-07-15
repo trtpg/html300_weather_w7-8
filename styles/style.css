@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url(normalize.css);
+html {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+article, footer, header, main, section {
+  display: block; }
+
+html, body {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-family: "Raleway", sans-serif; }
+
+.container {
+  padding: 0.01em 1rem;
+  background-color: #FFFFFF; }
+
+.center {
+  text-align: center; }
+
+.boxShadow {
+  box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2); }
+
+.margin {
+  margin: 1rem; }
+
+.background {
+  color: #FFA500;
+  background-color: #616161; }
+
+#cityName {
+  color: #A52A2A;
+  font-stretch: expanded; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-style: none; }
+
+th, td {
+  text-align: left;
+  padding: 0.7rem; }
+
+tr:nth-child(1) {
+  color: red;
+  background-color: #606039; }
+
+tr:nth-child(1):before {
+  content: "»"; }
+
+tr:nth-child(2) {
+  color: orange;
+  background-color: #396039; }
+
+tr:nth-child(2):before {
+  content: "✰"; }
+
+tr:nth-child(3) {
+  color: yellow;
+  background-color: #396060; }
+
+tr:nth-child(3):before {
+  content: "☀"; }
+
+tr:nth-child(4) {
+  color: green;
+  background-color: #393960; }
+
+tr:nth-child(4):before {
+  content: "≈"; }
+
+tr:nth-child(5) {
+  color: blue;
+  background-color: #603960; }
+
+tr:nth-child(5):before {
+  content: "❅"; }
+
+tr:nth-child(6) {
+  color: cyan;
+  background-color: #603939; }
+
+tr:nth-child(6):before {
+  content: "☜"; }
+
+.form-container {
+  background-color: #f1f1f6;
+  padding: 1rem 2rem 2rem;
+  margin: 1rem;
+  border: solid 1px #ccd; }
+
+button {
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer; }
+  button:focus, button:hover {
+    background-color: #45a049; }
+  button:active {
+    background-color: #FFA500;
+    transform: scale(1) rotate(-10deg);
+    border-radius: 100%; }
+
+/*# sourceMappingURL=style.css.map */
